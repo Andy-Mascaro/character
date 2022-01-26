@@ -1,21 +1,38 @@
 // import functions and grab DOM elements
 import { makeStatsString } from './utils.js';
+
 const headDropdown = document.getElementById('head-dropdown');
+
 const middleDropdown = document.getElementById('middle-dropdown');
+
 const bottomDropdown = document.getElementById('bottom-dropdown');
+
 const headEl = document.getElementById('head');
 const middleEl = document.getElementById('middle');
 const bottomEl = document.getElementById('bottom');
+
 const reportEl = document.getElementById('report');
+
 const catchphrasesEl = document.getElementById('catchphrases');
 const catchphraseInput = document.getElementById('catchphrase-input');
 const catchphraseButton = document.getElementById('catchphrase-button');
 
 // set state for how many times the user changes the head, middle, and bottom
 // set state for all of the character's catchphrases
+let catchphrase = [];
+let headElcounter = 0;
+let middleElcounter = 0;
+let bottomElcounter = 0;
 
 headDropdown.addEventListener('change', () => {
+
+    const value = e.target.value;
+    headImage.src = `./assest/${value}-head.png`;
+    headElcounter++;
+    displayStats();
+
     // get the value of the head dropdown
+
 
     // increment the head change count state
     
