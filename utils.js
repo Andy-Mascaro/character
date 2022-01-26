@@ -1,3 +1,3 @@
-export function makeStatsString(headCount, middleCount, bottomCount) {
-    return '';
+export function makeStatsString(headNum, middleNum, bottomNum) {
+    return 'You have chandged the head ${} ';
 }
