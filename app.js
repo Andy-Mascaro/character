@@ -57,7 +57,7 @@ middleDropdown.addEventListener('change', () => {
 
 bottomDropdown.addEventListener('change', () => {
     const value = bottomDropdown.value;
-    bottomEl.style.backgroundImage = `url("./assets/${value}-bottom.png")`;
+    bottomEl.style.backgroundImage = `url("./assets/${value}-pants.png")`;
     bottomCount++;
     displayStats();
 
@@ -81,7 +81,7 @@ catchphraseButton.addEventListener('click', () => {
 
 function displayStats() {
     // change the text contentof the reportEl to tell the user how many times they've changed each piece of the state
-    const statsString = createStatsString(headCount, middleCount, bottomCount);
+    const statsString = makeStatsString(headCount, middleCount, bottomCount);
     reportEl.textContent = statsString;
     
     // call this function with the correct arguments
@@ -93,7 +93,7 @@ function displayCatchphrases() {
 
         const p = document.createElement('p');
         p.textContent = catchphrase;
-        catchphrases.append(p);
+        catchphrasesEl.append(p);
     }
     // clear out the DOM for the currently displayed catchphrases
 
