@@ -139,3 +139,32 @@ main {
     font-family: cursive;
     text-align: center;
 }
+
+#face {
+    color:purple
+    
+}
+
+
+#mid {
+    color:green
+    
+}
+
+#bot {
+    color:burlywood
+    
+}
+
+#catch {
+    color:teal
+    
+}
+/* //*label {
+    font-style: bold;
+    color: purple;
+
+} */
+
+
+
