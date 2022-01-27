@@ -138,4 +138,30 @@ main {
     font-size: 2rem;
     font-family: cursive;
     text-align: center;
+    
 }
+
+#face {
+    color:purple;
+    font-weight:bold;
+}
+
+#mid {
+    color:green;
+    font-weight:bold;
+
+}
+
+#bot {
+    color:burlywood;
+    font-weight:bold;
+}
+
+#catch {
+    color:teal;
+    font-weight:bold;
+}
+
+
+
+
